@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ManuDaBanda</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="css/jcarousel.responsive.css" rel="stylesheet" media="screen">
+	<link href="style.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/jcarousel.responsive.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!--[if IE]>
+	<script src="js/ie9.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $('.cont-header').affix({
+                offset: {top:130}
+            });
+            $('.main-header').affix({
+                offset: {top:100}
+            });
+            $('.main-header').hide(); 
+            $('.main-header.affix-top, .main-header.affix').show(1000);
+            $('#contact').hide();
+            $( '.formcontact a' ).click(function() {
+				$( '#contact' ).slideToggle( "slow", function() {});
+			});
+        })
+    </script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="cont-shadow"></div>
+		<!--header-->
+		<header id="header" class="header clearfix">
+			<div class="main-header"></div>
+			<div id="contact" class="clearfix">
+				<div class="cont-contact col-centered col-lg-8 col-md-8 col-sm-10 col-xs-11 clearfix">
+					<h3>Contáctanos</h3>
+					<form id="" class="col-centered col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+						<div class="separa separa-group clearfix">
+							<div clas="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<label>Nombre:</label>
+								<input type="text" class="" />
+							</div>
+							<div clas="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<label>Email o Teléfono:</label>
+								<input type="text" class="" />
+							</div>
+						</div>
+						<div class="separa">
+							<label>Mensaje:</label>
+							<input type="text" class="" />
+						</div>
+						<div class="separa">
+							<textarea></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="container clearfix">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-centered">
+					<div class="cont-header col-centered col-lg-10 col-md-10 col-sm-10 col-xs-11">
+						<h1><a href="index.html">ManuDaBanda</a></h1>
+						<div class="menu" id="main-menu">
+							<ul>
+								<li><a href="biografia.html">Biografía</a></li>
+								<li><a href="discografia.html">Discografía</a></li>
+								<li><a href="galeria.html">Galería</a></li>
+								<li class="formcontact"><a href="#">Contáctanos</a></li>
+							</ul>
+						</div>
+						<div class="social" id="menu-social">
+							<ul>
+								<li class="instagram"><a href="#">instagram</a></li>
+								<li class="facebook"><a href="#">facebook</a></li>
+								<li class="twitter"><a href="#">twitter</a></li>
+								<li class="youtube"><a href="#">YouTube</a></li>
+								<li class="soundcloud"><a href="#">soundcloud</a></li>
+								<li class="bc"><a href="#">bc</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/header-->
+
+		<!--main-->
+		<div id="main">
+			<div class="back-general">
+				<div class="container">
+					<!--bio-->
+					<div class="cont-back col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="int-back">
+							<div class="col-centered col-lg-10 col-md-10 col-sm-10 col-xs-11 clearfix">
+								<div class="auxi-nav">
+									<a href="discografia-detalle.html">&lt; Discografía</a>
+								</div> 
+								<h3>Travesía Elefante</h3>
+							</div>
+							<div class="cont-images col-centered col-lg-10 col-md-10 col-sm-10 col-xs-11 clearfix">
+								<div class="cont-left col-lg-6 col-md-6 col-sm-6 col-xs-6">
+									<div class="spotify-list">
+										<iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A6chdRBWviHlm7JAtwgflBP" width="380" height="480" frameborder="0" allowtransparency="true"></iframe>
+									</div>
+									<div class="excerpt">
+										<p>este es un texto de descripción de un disco ... texto de prueba descripción de un disco ... estamos probando la descripción de un disco.</p>
+									</div>
+									<div class="date">Año 2015 - Nueva Zelanda</div>
+								</div>
+								<div class="cont-right col-lg-6 col-md-6 col-sm-6 col-xs-6">
+									<div class="list">
+										<ol>
+											<li>Intro Boreal</li>
+											<li>La Terminale</li>
+											<li>Bangkok</li>
+											<li>Mueve</li>
+											<li>Muchacha Raquel</li>
+											<li>Por la mañana</li>
+											<li>KE (con Ismael Oddó)</li>
+											<li>Sista</li>
+											<li>Te cacharon</li>
+											<li>Mala</li>
+											<li>Cucharita</li>
+											<li>El deseo del mono</li>
+											<li>Tabaquero</li>
+											<li>Eocionáo</li>
+											<li>Poto Pelao (con Juan Ayala)</li>
+											<li>Outro Boreal</li>
+										</ol>
+										<div class="bonus">
+											<p><span>Bonus Track - Ciudad Traicionera</span></p>
+											<p>Cover (con Joe Vasconcellos (autor) y Francisca Valenzuela)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/bio-->
+				</div>
+			</div>
+		</div>
+		<!--/main-->
+
+		<!--FOOTER-->
+		<footer id="footer" class="clearfix">
+			<div id="footer-social">
+				<ul>
+					<li class="instagram"><a href="#">instagram</a></li>
+					<li class="facebook"><a href="#">facebook</a></li>
+					<li class="twitter"><a href="#">twitter</a></li>
+					<li class="youtube"><a href="#">YouTube</a></li>
+					<li class="soundcloud"><a href="#">soundcloud</a></li>
+					<li class="bc"><a href="#">bc</a></li>
+				</ul>
+			</div>
+			<div class="footer-copyright">
+				<p>2015 Todos los derechos reservados. MANUDABANDA</p>
+			</div>
+		</footer>
+		<!--/FOOTER-->
+	</div>
+</body>
+</html>
